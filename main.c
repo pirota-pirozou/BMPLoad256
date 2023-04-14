@@ -10,7 +10,7 @@
 // ただし、このコードを使用したことによるいかなる損害についても、作者は一切の責任を負わない。
 
 #include <iocslib.h>
-#include <doslib.h>
+//#include <doslib.h>
 #include "BMPLoad256.h"
 
 /* main */
@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 {
     // スーパーバイザーモードへ
     int usp = B_SUPER(0);
+
+    allmem();       // malloc()/free()を使えるようにする
 
     CRTMOD(8);      // 512x512px/31KHz/256色モード/２枚
     G_CLR_ON();     // グラフィック画面クリア・表示ON

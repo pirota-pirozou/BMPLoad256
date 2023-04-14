@@ -5,7 +5,7 @@ PROG = TEST.X						# 最終的に作成される実行ファイル名
 CC = gcc
 
 #CFLAGS = /Fc /Ns					# for XC2 & SCD
-CFLAGS = -c -fcombine-regs -fforce-addr -I$(INCLUDE) 		# for GCC
+CFLAGS = -c -fcombine-regs -fforce-addr -I$(include) 	# for GCC
 
 AS = as							# アセンブラ
 AFLAGS = -w						# アセンブラ・スイッチ
@@ -37,3 +37,4 @@ BMPLoad256.o: BMPLoad256.c BMPLoad256.h		# Ｃ言語のモジュール作成
 
 clean: $(PROG)
 	$(RM) $(OBJS) $(PROG)
+

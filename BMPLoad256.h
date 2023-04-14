@@ -11,7 +11,7 @@
 
 #pragma once
 #ifndef ____BMPLOAD256_H____
-#define ____BMPLOAD256_H__
+#define ____BMPLOAD256_H____
 
 #include <stdio.h>
 #include <stdlib.h>
